@@ -20,7 +20,9 @@ body {
     font-family: 'Monofett', cursive !important;
     font-size: 70pt;
     text-align: center;
+    text-decoration: none;
     color: #b5c7d3;
+    margin: auto;
 }
 
 .cp_hr08 {
@@ -37,7 +39,6 @@ body {
     margin: 5px auto;
 	padding: 5px 5px;
 	box-sizing: border-box;
-    overflow: hidden;
 }
 
 #detailTxt {
@@ -53,6 +54,7 @@ body {
 }
 
 .hover:hover {
-    transform: scale(1.1);
+    box-shadow: 0 0 30px #dfdfdf;
+    transform: scale(1.05);
     transition-duration: 0.5s;
 }
