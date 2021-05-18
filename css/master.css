@@ -29,15 +29,20 @@ body {
 	border-bottom: 1px dashed #b5c7d3;
 }
 
-.flex-container {
+.flex-container-ti {
     display: flex;
     flex-wrap: wrap;
 }
 
-.flex-item {
+.flex-item-ti {
     margin: 5px auto;
 	padding: 5px 5px;
 	box-sizing: border-box;
+}
+
+.flex-item-ti img {
+    width: 640px;
+    height: 320px;
 }
 
 #detailTxt {
@@ -56,4 +61,12 @@ body {
     box-shadow: 0 0 30px #dfdfdf;
     transform: scale(1.05);
     transition-duration: 0.5s;
+}
+
+#nothing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
 }
