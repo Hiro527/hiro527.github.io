@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    margin-right: 15px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu-btn:hover {
+    background-color: #101214;
+}
+
+.menu-btn.current {
+    background-color: #16191b;
+}
+
+.menu-btn.current:hover {
+    background-color: #101214;
+}
+
+.menu-btn .material-icons {
+    margin-left: 5px !important;
+}
+
+.codeBlock {
+    position: relative;
+    overflow: hidden;
+    font-family: 'Noto Sans Mono', 'Noto Sans JP';
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    margin: 10px;
+    padding: 2.5px;
+    background-color: #292b2c;
+    border-radius: 5px;
+    counter-reset: linenumber;
+}
+
+.codeBlock a {
+    text-decoration: none;
+    color: rgb(133, 221, 255) !important;
+}
+
+.codeBlock a:hover {
+    background-color: #fff;
+}
+
+.linesbg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42.5px;
+    height: 100%;
+    background-color: #101214;
+}
+
+.lines {
+    position: relative;
+    margin: 5px;
+}
+
+.line {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.line::before {
+    font-family: 'Noto Sans Mono', monospace;
+    display: inline-block;
+    text-align: right;
+    color: rgb(212, 212, 212);
+    margin-right: 10px;
+    width: 30px;
+    counter-increment: linenumber;
+    content: counter(linenumber);
+}
+
+.jsComment {
+    color: rgb(69, 206, 76);
+}
+
+#tempCode {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerText {
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+}
